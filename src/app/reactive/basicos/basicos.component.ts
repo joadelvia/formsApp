@@ -26,7 +26,7 @@ export class BasicosComponent implements OnInit {
   ngOnInit() {
     this.miFormulario.reset({
       nombre: 'RTX 4080ti',
-      precio: 1600
+      precio: 2000
     })
   }
 

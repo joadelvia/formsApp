@@ -17,7 +17,7 @@ export class DinamicosComponent  {
     ], Validators.required )
   });
 
-  nuevoFavorito: FormControl = this.fb.control('', Validators.required );
+  nuevoFavorito: FormControl = this.fb.control('', [Validators.required, Validators.minLength(3)] );
 
   get favoritosArr() {
     return this.miFormulario.get('favoritos') as FormArray;
